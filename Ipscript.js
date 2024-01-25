@@ -2,7 +2,7 @@ const https = require('https');
 
 async function getCurrentIP() {
   return new Promise((resolve, reject) => {
-    https.get('https://xxxxxxxxx', (res) => {
+    https.get('https://public IP', (res) => {
       let data = '';
 
       res.on('data', (chunk) => {
@@ -25,7 +25,7 @@ async function getCurrentIP() {
 
 async function connectToFirewall(ip) {
   const firewallEndpoint = 'https://firewall-api.com/connect';
-  const apiKey = 'your-api-key';
+  const apiKey = 'xxxxxx(myapi key)';
 
   const postData = JSON.stringify({ ip });
 
